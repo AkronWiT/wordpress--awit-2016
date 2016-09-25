@@ -1,0 +1,25 @@
+/*!
+Theme Name: Akron Women in Tech | 2016
+Description: Custom WordPress theme for Akron WiT
+Author: Kevin Wirth
+Description: Custom WordPress for Akron WiT.
+Version: 2.0
+*/
+
+@import
+  'variables',
+  'mixins',
+  // BASE
+  'base/base',
+  'base/normalize',
+  // LAYOUT
+  'layout/container',
+  'layout/content',
+  'layout/footer',
+  'layout/header',
+  // MODULES
+  'modules/buttons',
+  'modules/helpers',
+  'modules/logos',
+  'modules/menus'
+;

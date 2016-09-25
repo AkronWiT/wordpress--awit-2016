@@ -1,0 +1,14 @@
+
+@mixin retina-image($filename, $background-size, $extension: png, $retina-suffix: '@2x') {
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min--moz-device-pixel-ratio: 1.5),
+  only screen and (-o-min-device-pixel-ratio: 1.5/1),
+  only screen and (min-resolution: 144dpi),
+  only screen and (min-resolution: 1.5dppx) {
+    /* on retina, use image that's scaled by 2 */
+    background-image: url('#{$filename}#{$retina-suffix}.#{$extension}');
+    background-size: $background-size;
+  }
+  background-image: url('#{$filename}.#{$extension}');
+  background-size: $background-size;
+}

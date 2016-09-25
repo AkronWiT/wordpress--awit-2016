@@ -1,0 +1,23 @@
+// menus.scss
+
+// Main Menu
+.menu--main {
+  display: block;
+  float: right;
+
+  list-style: none;
+
+  font-size: em(18, $base-font-size);
+  text-transform: uppercase;
+  text-align: right;
+
+  // Main Menu : List Items
+  .menu-item {
+    display: inline-block;
+
+    // Main Menu : List Items : Links
+    a {
+      padding: 0 .5em;
+    }
+  }
+}

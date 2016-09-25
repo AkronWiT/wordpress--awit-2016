@@ -1,0 +1,21 @@
+// buttons.scss
+
+// Button
+.btn {
+  padding: .75em 1em;
+  border-radius: 8px;
+
+  // Primary Button
+  &.btn--primary,
+  &.btn--primary a {
+    color: #fff;
+    background-color: $bittersweet;
+  }
+
+  // Secondary Button
+  &.btn--secondary,
+  &.btn--secondary a {
+    color: #fff;
+    background-color: $tradewind;
+  }
+}

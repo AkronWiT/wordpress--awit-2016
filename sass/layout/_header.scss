@@ -1,0 +1,24 @@
+// header.scss
+
+// Header
+.header {
+  height: 80px;
+
+  background: rgba(39,46,54,0.80);
+  border: 1px solid #979797;
+
+  // Header : Links
+  a {
+    &:link    { color: $aths-special; }
+    &:visited { color: $aths-special; }
+    &:hover   { color: $aths-special; }
+    &:active  { color: $aths-special; }
+  }
+
+  // Header : Logo
+  .logo {
+    position: absolute;
+    top: 10px;
+    left: 0;
+  }
+}

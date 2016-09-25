@@ -1,0 +1,19 @@
+// base.scss
+
+body {
+  font-size: 16px;
+  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+  font-weight: 300;
+
+  color: $outer-space;
+  background-color: #fff;
+}
+
+// Anchor
+a {
+  text-decoration: none;
+  &:link    { color: $tradewind; }
+  &:visited { color: $tradewind; }
+  &:hover   { color: $tradewind; }
+  &:active  { color: $tradewind; }
+}
