@@ -1,0 +1,7 @@
+// theme.scss
+
+body {
+  @include retina-image('img/bg--logo--awit', 1024px 1261px);
+  background-repeat: no-repeat;
+  background-position: fixed;
+}

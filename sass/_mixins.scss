@@ -1,4 +1,12 @@
+// mixins.scss
 
+// EM
+@function em($pixels, $context: $base-font-size) {
+  @return #{$pixels/$context}em;
+}
+
+
+// Retina Image
 @mixin retina-image($filename, $background-size, $extension: png, $retina-suffix: '@2x') {
   @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (min--moz-device-pixel-ratio: 1.5),

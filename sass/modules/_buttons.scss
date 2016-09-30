@@ -1,20 +1,24 @@
 // buttons.scss
 
-// Button
-.btn {
+%btn {
   padding: .75em 1em;
   border-radius: 8px;
 
+}
+
+// Button
+[role='button'] {
+
   // Primary Button
-  &.btn--primary,
-  &.btn--primary a {
+  &.btn--primary {
+    @extend %btn;
     color: #fff;
     background-color: $bittersweet;
   }
 
   // Secondary Button
-  &.btn--secondary,
-  &.btn--secondary a {
+  &.btn--secondary {
+    @extend %btn;
     color: #fff;
     background-color: $tradewind;
   }

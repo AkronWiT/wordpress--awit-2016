@@ -7,7 +7,8 @@
 
   list-style: none;
 
-  font-size: em(18, $base-font-size);
+  font-size: em(18px, $base-font-size);
+  line-height: 1em;
   text-transform: uppercase;
   text-align: right;
 
@@ -15,9 +16,21 @@
   .menu-item {
     display: inline-block;
 
+    // Main Menu : Call to Action Items
+    &.menu--c2a {
+
+      // Main Menu : Call to Action Items : Link
+      a {
+        @extend %btn;
+        color: #fff;
+        background-color: $bittersweet;
+      }
+    }
+
     // Main Menu : List Items : Links
     a {
-      padding: 0 .5em;
+      display: block;
+      padding: .75em .5em;
     }
   }
 }
