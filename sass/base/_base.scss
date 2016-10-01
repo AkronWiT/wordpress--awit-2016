@@ -17,3 +17,8 @@ a {
   &:hover   { color: $tradewind; }
   &:active  { color: $tradewind; }
 }
+
+// Paragraph
+p {
+  line-height: 1.5em;
+}

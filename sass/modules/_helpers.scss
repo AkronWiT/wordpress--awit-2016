@@ -1,5 +1,47 @@
 // helpers.scss
 
+////////////////////////////////////////////////////////////////////////////////
+// BLOCK SIZES
+////////////////////////////////////////////////////////////////////////////////
+
+%gutter {
+  margin-right: percentage(10px / $site-width--large);
+  margin-left: percentage(10px / $site-width--large);
+}
+
+.size-1  { width: percentage(60px / $site-width--large); @extend %gutter; }
+.size-2  { width: percentage(140px / $site-width--large); @extend %gutter; }
+.size-3  { width: percentage(220px / $site-width--large); @extend %gutter; }
+.size-4  { width: percentage(300px / $site-width--large); @extend %gutter; }
+.size-5  { width: percentage(380px / $site-width--large); @extend %gutter; }
+.size-6  { width: percentage(460px / $site-width--large); @extend %gutter; }
+.size-7  { width: percentage(540px / $site-width--large); @extend %gutter; }
+.size-8  { width: percentage(620px / $site-width--large); @extend %gutter; }
+.size-9  { width: percentage(700px / $site-width--large); @extend %gutter; }
+.size-10 { width: percentage(780px / $site-width--large); @extend %gutter; }
+.size-11 { width: percentage(860px / $site-width--large); @extend %gutter; }
+.size-12 { width: percentage(940px / $site-width--large); @extend %gutter; }
+
+.size-fx-1  { width: 60px;  }
+.size-fx-2  { width: 140px; }
+.size-fx-3  { width: 220px; }
+.size-fx-4  { width: 300px; }
+.size-fx-5  { width: 380px; }
+.size-fx-6  { width: 460px; }
+.size-fx-7  { width: 540px; }
+.size-fx-8  { width: 620px; }
+.size-fx-9  { width: 700px; }
+.size-fx-10 { width: 780px; }
+.size-fx-11 { width: 860px; }
+.size-fx-12 { width: 940px; }
+
+.size-full { width: 100%; }
+.size-half { width: 50%;  }
+
+.fr { float: right; }
+.fl { float: left; }
+.fn { float: none; }
+
 // Clearfix
 .clearfix {
   &:after {
@@ -9,4 +51,15 @@
      height: 0;
      clear: both;
   }
+}
+
+
+////////////////////////////////////////////////////////////////////////////////
+// TEXT
+////////////////////////////////////////////////////////////////////////////////
+
+.hidden-text {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
 }
