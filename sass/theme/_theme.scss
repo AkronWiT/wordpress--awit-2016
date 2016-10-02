@@ -10,3 +10,27 @@ h1, h2, h3, h4 {
   font-weight: bold;
   text-transform: uppercase;
 }
+
+.container {
+  // Primary Container
+  &.module--primary {
+    padding-top: 0;
+  }
+
+  // Secondary Container
+  &.module--secondary {
+    background: rgba(227, 235, 202, .5);
+    border: 5px solid rgba(153, 176, 141, .5);
+
+    // Secondary Container: Headings
+    h1, h2, h3, h4 { color: $corduroy; }
+  }
+
+  // Tertiary Container
+  &.module--tertiary {
+    background: rgba(189, 226, 225, .5);
+
+    // Tertiary Container: Headings
+    h1, h2, h3, h4 { color: $river-bed; }
+  }
+}

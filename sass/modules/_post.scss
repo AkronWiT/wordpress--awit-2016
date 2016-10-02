@@ -1,0 +1,28 @@
+// post.scss
+
+// Post Wrapper
+.post--wrapper {
+
+  // Post Wrapper: Post
+  .post {
+    position: relative;
+
+    width: 300px;
+    min-height: 550px;
+    margin-right: 20px;
+
+    overflow: hidden;
+
+    // Post Wrapper: Last Post
+    &:last-child() {
+      margin-right: 0;
+    }
+
+    // Post Wrapper: Button
+    [role='button'] {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+}

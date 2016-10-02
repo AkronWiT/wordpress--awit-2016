@@ -44,6 +44,8 @@
 
 // Clearfix
 .clearfix {
+
+  // After Clearfix
   &:after {
      content: '.';
      visibility: hidden;
@@ -58,8 +60,18 @@
 // TEXT
 ////////////////////////////////////////////////////////////////////////////////
 
-.hidden-text {
+// Hidden Text
+.text-hide {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
 }
+
+// Capitalized Text
+.text-caps { text-transform: uppercase; }
+
+// Subdued Text
+.text-subdued { opacity: .5; }
+
+// Bold Text
+.text-bold { font-weight: bold; }

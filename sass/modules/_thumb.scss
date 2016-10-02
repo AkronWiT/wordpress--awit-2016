@@ -1,0 +1,13 @@
+// thumb.scss
+
+// Thumbnail
+.thumb {
+  width: 100%;
+  height: 185px;
+  display: block;
+
+  // Blank Thumbnail
+  &.thumb--blank {
+    background: url('img/bg--thumb--blank.png') #ccc no-repeat 50% 50%;
+  }
+}
