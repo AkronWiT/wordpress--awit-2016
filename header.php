@@ -16,7 +16,7 @@
 <div class="header clearfix">
 	<div class="content">
     <!-- AWIT LOGO -->
-		<h1 class="logo"><a href="/">Akron Women In Tech</a></h1>
+		<a href="/" class="logo"><h1>Akron Women In Tech</h1></a>
     <!-- MAIN NAVIGATION -->
     <?php wp_nav_menu(array('menu' => 'main', 'menu_class' => 'menu--main')); ?>
 	</div>

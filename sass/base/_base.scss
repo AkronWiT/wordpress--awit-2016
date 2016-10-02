@@ -28,4 +28,7 @@ p {
   line-height: 1.5em;
 }
 
-small { font-size: em(12px, $base-font-size) }
+small {
+  font-size: em(12px, $base-font-size);
+  line-height: 1em;
+}
