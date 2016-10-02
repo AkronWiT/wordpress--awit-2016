@@ -1,11 +1,13 @@
 <?php get_header(); ?>
 
+<!-- NEWS -->
 <div class="container module--primary clearfix">
   <div class="content">
     <h2>Next Event</h2>
   </div>
 </div>
 
+<!-- WHO WE ARE -->
 <div class="container module--secondary clearfix">
   <div class="content">
     <img src="<?php bloginfo('template_url'); ?>/img/photo--meetup.png" class="size-5 fl">
@@ -19,6 +21,7 @@
   </div>
 </div>
 
+<!-- NEWS -->
 <div class="container post--wrapper module--tertiary clearfix">
   <div class="content">
     <h2>News</h2>
@@ -41,24 +44,48 @@
       <a href="<?php the_permalink(); ?>" role="button" class="btn--secondary fl">LEARN MORE</a>
     </div>
   <?php endwhile; ?>
+  <?php wp_reset_query(); ?>
   </div>
 </div>
 
+<!-- SOCIAL PROOFS -->
 <div class="container clearfix">
   <div class="content">
-    <h2 class="text-hide">Testimony</h2>
+    <h2>What Our Members Say</h2>
+
+    <div class="testimony--wrapper size-6 fl clearfix">
+    <!-- TESTIMONY 1 -->
+      <?php if ( get_post_meta($post->ID, 'testimony_quote_1', true) ) { ?>
+        <span class="testimony--photo" style="background-image: url('<?php the_field('testimony_photo_1'); ?>');"></span>
+        <p class="size-full"><?php the_field('testimony_quote_1'); ?></p>
+        <p class="size-full">- <?php the_field('testimony_name_1'); ?></p>
+      <?php } ?>
+    </div>
+
+    <div class="testimony--wrapper size-6 fr clearfix">
+      <!-- TESTIMONY 2 -->
+      <?php if ( get_post_meta($post->ID, 'testimony_quote_2', true) ) { ?>
+        <span class="testimony--photo" style="background-image: url('<?php the_field('testimony_photo_2'); ?>');"></span>
+        <p class="size-full"><?php the_field('testimony_quote_2'); ?></p>
+        <p class="size-full">- <?php the_field('testimony_name_2'); ?></p>
+      <?php } ?>
+    </div>
+
   </div>
 </div>
 
-<div class="container module--secondary clearfix">
+<!-- SPONSORS -->
+<div class="container sponsors--wrapper module--secondary clearfix">
   <div class="content">
     <h2>Sponsors</h2>
-    <img src="https://placeholdit.imgix.net/~text?txtsize=21&txt=220%C3%97140&w=380&h=285" class="size-3 fl">
-    <img src="https://placeholdit.imgix.net/~text?txtsize=21&txt=220%C3%97140&w=380&h=285" class="size-3 fl">
-    <img src="https://placeholdit.imgix.net/~text?txtsize=21&txt=220%C3%97140&w=380&h=285" class="size-3 fl">
-    <img src="https://placeholdit.imgix.net/~text?txtsize=21&txt=220%C3%97140&w=380&h=285" class="size-3 fl">
+    <?php if( have_rows('sponsor_logos') ): ?>
+      <?php while ( have_rows('sponsor_logos') ) : the_row(); ?>
+      <div class="sponsors--sponsor">
+        <a href="<?php the_sub_field('url'); ?>" target="_blank" title="<?php the_sub_field('name'); ?>"><img src="<?php the_sub_field('logo'); ?>" alt="<?php the_sub_field('name'); ?> Logo"></a>
+      </div>
+      <?php endwhile; ?>
+    <?php endif; ?>
   </div>
 </div>
-
 
 <?php get_footer(); ?>

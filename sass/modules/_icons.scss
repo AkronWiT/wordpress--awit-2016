@@ -1,0 +1,37 @@
+// icons.scss
+
+
+// Icon
+.icon {
+  display: inline-block;
+  text-indent: 999em;
+
+  // Email Icon
+  &.icon--email {
+    @include retina-image('img/icon--email', 28px 29px);
+    width: 28px;
+    height: 29px;
+  }
+
+  // Facebook Icon
+  &.icon--facebook {
+    @include retina-image('img/icon--facebook', 28px 29px);
+    width: 28px;
+    height: 29px;
+  }
+
+  // GitHub Icon
+  &.icon--github {
+    @include retina-image('img/icon--github', 28px 29px);
+    width: 28px;
+    height: 29px;
+  }
+
+  // Twitter Icon
+  &.icon--twitter {
+    @include retina-image('img/icon--twitter', 28px 29px);
+    width: 28px;
+    height: 29px;
+  }
+
+}

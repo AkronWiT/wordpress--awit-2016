@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link href="<?php bloginfo('stylesheet_url'); ?>" media="screen" rel="stylesheet" />
+  <link href="<?php bloginfo('template_url'); ?>/favicon.ico" rel="icon" type="image/png" />
 	<?php wp_head(); ?>
 </head>
 

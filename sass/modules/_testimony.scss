@@ -1,0 +1,28 @@
+// testimony.scss
+
+// Testimony Wrapper
+.testimony--wrapper {
+  position: relative;
+
+  height: 140px;
+  padding-left: 156px;
+  box-sizing: border-box;
+
+  p {
+    margin: .5em 0;
+  }
+}
+
+// Testimony Photo
+.testimony--photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 140px;
+  height: 140px;
+  display: block;
+
+  background-size: cover;
+  border-radius: 70px;
+}
