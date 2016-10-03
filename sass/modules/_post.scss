@@ -3,26 +3,61 @@
 // Post Wrapper
 .post--wrapper {
 
+  .content {
+    @media (min-width: $site-width--medium) {
+      width: percentage(380px / $site-width--medium);
+    }
+
+    @media (min-width: $site-width--large) {
+      width: 940px;
+    }
+  }
+
   // Post Wrapper: Post
   .post {
     position: relative;
 
-    width: 300px;
-    min-height: 550px;
-    margin-right: 20px;
+    width: 100%;
+    min-height: 500px;
+    margin: 0 auto;
 
     overflow: hidden;
 
-    // Post Wrapper: Last Post
-    &:last-child() {
-      margin-right: 0;
+    clear: both;
+
+    @media (min-width: $site-width--large) {
+      width: 300px;
+      min-height: 550px;
+      margin: 0 20px 0 0;
+
+      float: left;
+
+      // Post Wrapper: Last Post
+      &:last-child() {
+        margin-right: 0;
+      }
+    }
+
+    // Post Wrapper: Thumbnail
+    .post--thumb {
+      @media (min-width: $site-width--medium) {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+      }
+
+      @media (min-width: $site-width--large) {
+        margin: 0;
+      }
     }
 
     // Post Wrapper: Button
     [role='button'] {
-      position: absolute;
-      bottom: 0;
-      left: 0;
+      @media (min-width: $site-width--large) {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
     }
   }
 }

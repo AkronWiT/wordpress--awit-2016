@@ -1,17 +1,17 @@
 <?php get_header(); ?>
 
 <!-- NEWS -->
-<div class="container module--primary clearfix">
+<div class="container events--wrapper module--primary clearfix">
   <div class="content">
 
-    <div class="size-8 no-gutter fl">
+    <div class="events--up-next">
       <h2 class="h3">Next Event</h2>
       <h3 class="h2"><a href="https://www.meetup.com/Akron-Women-In-Tech/events/233995684/">Programming Book Club - Eloquent JavaScript</a></h3>
       <p>This week we will discuss chapters 18-19 of Eloquent JavaScript. The final exercise for chapter 19 is advanced; do not save it for the last minute. As the author advises...</p>
       <a href="https://www.meetup.com/Akron-Women-In-Tech/events/233995684/" role="button" class="btn--secondary fl">LEARN MORE</a>
     </div>
 
-    <div class="size-4 no-gutter fr">
+    <div class="events--up-comming">
       <h2 class="h3">Upcoming Events</h2>
       <ul style="list-style: none; padding: 0;">
         <li style="margin-bottom: 1em;"><a href="https://www.meetup.com/Akron-Women-In-Tech/events/233982287/" target="_blank">Hack Night</a></li>
@@ -23,10 +23,10 @@
 </div>
 
 <!-- WHO WE ARE -->
-<div class="container module--secondary clearfix">
+<div class="container who-we-are--wrapper module--secondary clearfix">
   <div class="content">
-    <img src="<?php bloginfo('template_url'); ?>/img/photo--meetup.png" class="size-5 fl">
-    <div class="size-6 fr">
+    <img src="<?php bloginfo('template_url'); ?>/img/photo--meetup.png" class="who-we-are--photo">
+    <div class="who-we-are--description">
       <h2>Who We Are</h2>
     <?php if ( get_post_meta($post->ID, 'what_we_do', true) ) { ?>
       <p><?php the_field('what_we_do'); ?></p>
@@ -45,10 +45,10 @@
     $loop = new WP_Query( $args );
     while ( $loop->have_posts() ) : $loop->the_post();
   ?>
-    <div class="post fl">
+    <div class="post">
       <a href="<?php the_permalink(); ?>">
     <?php if ( has_post_thumbnail() ) { ?>
-        <img src="<?php the_post_thumbnail_url(); ?>" class="thumb">
+        <img src="<?php the_post_thumbnail_url(); ?>" class="post--thumb">
     <?php } else { ?>
         <span class="thumb thumb--blank"></span>
     <?php } ?>
@@ -66,10 +66,10 @@
 <!-- SOCIAL PROOFS -->
 <div class="container clearfix">
   <div class="content">
-    <h2>What Our Members Say</h2>
 
-    <div class="testimony--wrapper size-6 fl clearfix">
-    <!-- TESTIMONY 1 -->
+    <div class="testimony--wrapper clearfix">
+      <h2>What Our Members Say</h2>
+      <!-- TESTIMONY 1 -->
       <?php if ( get_post_meta($post->ID, 'testimony_quote_1', true) ) { ?>
         <span class="testimony--photo" style="background-image: url('<?php the_field('testimony_photo_1'); ?>');"></span>
         <p class="size-full"><?php the_field('testimony_quote_1'); ?></p>
@@ -77,7 +77,7 @@
       <?php } ?>
     </div>
 
-    <div class="testimony--wrapper size-6 fr clearfix">
+    <div class="testimony--wrapper clearfix">
       <!-- TESTIMONY 2 -->
       <?php if ( get_post_meta($post->ID, 'testimony_quote_2', true) ) { ?>
         <span class="testimony--photo" style="background-image: url('<?php the_field('testimony_photo_2'); ?>');"></span>

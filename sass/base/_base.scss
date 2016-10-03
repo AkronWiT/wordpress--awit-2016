@@ -9,10 +9,32 @@ body {
   background-color: #fff;
 }
 
-// Headings
-h1, .h1 { font-size: 2.5em; }
-h2, .h2 { font-size: 2em; }
-h3, .h3 { font-size: 1.5em; }
+// Heading 1
+h1, .h1 {
+  font-size: 2em;
+
+  @media (min-width: $site-width--large) {
+    font-size: 2.5em;
+  }
+}
+
+// Heading 2
+h2, .h2 {
+  font-size: 1.5em;
+
+  @media (min-width: $site-width--large) {
+    font-size: 2em;
+  }
+}
+
+// Heading 3
+h3, .h3 {
+  font-size: 1.25em;
+
+  @media (min-width: $site-width--large) {
+    font-size: 1.5em;
+  }
+}
 
 // Anchor
 a {

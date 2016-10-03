@@ -2,12 +2,27 @@
 
 // Testimony Wrapper
 .testimony--wrapper {
-  position: relative;
+  width: 100%;
+  margin-bottom: 2em;
 
-  height: 140px;
-  padding-left: 156px;
   box-sizing: border-box;
 
+  @media (min-width: $site-width--medium) {
+    width: percentage(460px / $site-width--medium);
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @media (min-width: $site-width--large) {
+    position: relative;
+
+    width: 460px;
+    height: 140px;
+    padding-left: 156px;
+    margin: 0;
+  }
+
+  // Testimony Wrapper: Paragraph
   p {
     margin: .5em 0;
   }
@@ -15,15 +30,20 @@
 
 // Testimony Photo
 .testimony--photo {
-  position: absolute;
-  top: 0;
-  left: 0;
-
   width: 140px;
   height: 140px;
   display: block;
+  margin: 0 auto;
 
   background-size: cover;
   background-position: 50% 50%;
   border-radius: 70px;
+
+  @media (min-width: $site-width--large) {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    margin: 0;
+  }
 }

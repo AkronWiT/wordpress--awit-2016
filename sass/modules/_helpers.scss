@@ -11,9 +11,42 @@
 
 .no-gutter { margin: 0; }
 
-.size-1  { width: percentage(60px / $site-width--large); @extend %gutter; }
-.size-2  { width: percentage(140px / $site-width--large); @extend %gutter; }
-.size-3  { width: percentage(220px / $site-width--large); @extend %gutter; }
+.size-1  {
+  width: percentage(60px / $site-width--small);
+  @extend %gutter;
+
+  @media (min-width: $site-width--medium) {
+    width: percentage(60px / $site-width--medium);
+  }
+
+  @media (min-width: $site-width--large) {
+    width: percentage(60px / $site-width--large);
+  }
+}
+.size-2  {
+  width: percentage(140px / $site-width--small);
+  @extend %gutter;
+
+  @media (min-width: $site-width--medium) {
+    width: percentage(140px / $site-width--medium);
+  }
+
+  @media (min-width: $site-width--large) {
+    width: percentage(140px / $site-width--large);
+  }
+}
+.size-3  {
+  width: percentage(220px / $site-width--small);
+  @extend %gutter;
+
+  @media (min-width: $site-width--medium) {
+    width: percentage(220px / $site-width--medium);
+  }
+
+  @media (min-width: $site-width--large) {
+    width: percentage(220px / $site-width--large);
+  }
+}
 .size-4  { width: percentage(300px / $site-width--large); @extend %gutter; }
 .size-5  { width: percentage(380px / $site-width--large); @extend %gutter; }
 .size-6  { width: percentage(460px / $site-width--large); @extend %gutter; }

@@ -5,6 +5,7 @@
   /* Contact Us: Field Label */
   .field-label {
     display: block;
+    margin-bottom: .5em;
 
     font-weight: bold;
     text-transform: uppercase;
@@ -12,14 +13,15 @@
 
   /* Contact Us: Form Field */
   .form-field {
-    margin-bottom: 15px;
+    margin-bottom: 1em;
 
     /* Contact Us: Form Field: Input */
     .wpcf7-text {
       width: 100%;
-      height: 26px;
+      height: 36px;
       padding: 5px;
       border: none;
+      box-sizing: border-box;
 
       font: {
         size: 1em;
@@ -33,6 +35,7 @@
       width: 100%;
       padding: 5px;
       border: 0;
+      box-sizing: border-box;
 
       font-size: 1em;
       font-family: inherit;
@@ -42,17 +45,25 @@
 
   /* Contact Us: First Name Field */
   .field-first-name {
-    width: 220px;
-    margin-right: 32px;
+    width: 300px;
 
-    float: left;
+    @media (min-width: $site-width--large) {
+      width: 220px;
+      margin-right: 32px;
+
+      float: left;
+    }
   }
 
   /* Contact Us: Last Name Field */
   .field-last-name {
-    width: 220px;
+    width: 300px;
 
-    float: left;
+    @media (min-width: $site-width--large) {
+      width: 220px;
+
+      float: left;
+    }
   }
 
   /* Contact Us: Email Field */
@@ -62,7 +73,11 @@
 
   /* Contact Us: Message Field */
   .field-message {
-    width: 480px;
+    width: 300px;
+
+    @media (min-width: $site-width--large) {
+      width: 480px;
+    }
   }
 
   /* Contact Us: Submit */

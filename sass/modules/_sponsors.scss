@@ -3,14 +3,30 @@
 // Sponsor Wrapper
 .sponsors--wrapper {
 
+  .content {
+    @media (min-width: $site-width--medium) {
+      width: percentage(380px / $site-width--medium);
+    }
+
+    @media (min-width: $site-width--large) {
+      width: 940px;
+    }
+  }
+
   // Sponsor Wrapper: Sponsor
   .sponsors--sponsor {
-    width: 300px;
-    height: 140px;
-    padding-top: 45px;
+    width: 100%;
+    height: 120px;
+    padding-top: 35px;
     display: block;
 
     float: left;
+
+    @media (min-width: $site-width--large) {
+      width: 300px;
+      height: 140px;
+      padding-top: 45px;
+    }
 
     // Sponsor Wrapper: Sponsor: Link
     img {

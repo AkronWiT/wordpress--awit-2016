@@ -2,9 +2,17 @@
 
 // Content
 .content {
-  width: 940px;
+  width: percentage(300px / $site-width--small);
   position: relative;
 
   display: block;
   margin: 0 auto;
+
+  @media (min-width: $site-width--medium) {
+    width: percentage(620px / $site-width--medium);
+  }
+
+  @media (min-width: $site-width--large) {
+    width: 940px;
+  }
 }

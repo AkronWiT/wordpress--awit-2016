@@ -1,0 +1,41 @@
+// who-we-are.scss
+
+// Who We Are Wrapper
+.who-we-are--wrapper {
+
+  // Who We Are Wrapper: Photo
+  .who-we-are--photo {
+    width: 100%;
+    display: block;
+
+    @media (min-width: $site-width--medium) {
+      width: percentage(460px / $site-width--medium);
+      margin: 0 auto;
+    }
+
+    @media (min-width: $site-width--large) {
+      width: percentage(380px / $site-width--large);
+      margin: 0;
+
+      float: left;
+    }
+  }
+
+  // Who We Are Wrapper: Description
+  .who-we-are--description {
+    width: 100%;
+    display: block;
+
+    @media (min-width: $site-width--medium) {
+      width: percentage(460px / $site-width--medium);
+      margin: 0 auto;
+    }
+
+    @media (min-width: $site-width--large) {
+      width: percentage(460px / $site-width--large);
+      margin: 0;
+      float: right;
+    }
+  }
+
+}

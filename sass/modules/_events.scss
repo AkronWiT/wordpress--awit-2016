@@ -1,0 +1,36 @@
+// events.scss
+
+// Events Wrapper
+.events--wrapper {
+
+  // Events Wrapper: Up Next
+  .events--up-next {
+    width: 100%;
+    display: block;
+    margin-bottom: 2em;
+    overflow: hidden;
+
+    @media (min-width: $site-width--large) {
+      width: 620px;
+      margin-bottom: 0;
+
+      float: left;
+    }
+  }
+
+  // Events Wrapper: Up Coming
+  .events--up-comming {
+    width: 100%;
+    display: block;
+
+    clear: both;
+
+    @media (min-width: $site-width--large) {
+      width: 300px;
+
+      float: right;
+      clear: none;
+    }
+  }
+
+}

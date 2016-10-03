@@ -2,7 +2,7 @@
 
 // Main Menu
 .menu--main {
-  display: block;
+  display: none;
   float: right;
 
   list-style: none;
@@ -11,6 +11,10 @@
   line-height: 1em;
   text-transform: uppercase;
   text-align: right;
+
+  @media (min-width: $site-width--medium) {
+    display: block;
+  }
 
   // Main Menu : List Items
   .menu-item {
