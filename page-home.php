@@ -3,7 +3,22 @@
 <!-- NEWS -->
 <div class="container module--primary clearfix">
   <div class="content">
-    <h2>Next Event</h2>
+
+    <div class="size-8 no-gutter fl">
+      <h2 class="h3">Next Event</h2>
+      <h3 class="h2"><a href="https://www.meetup.com/Akron-Women-In-Tech/events/233995684/">Programming Book Club - Eloquent JavaScript</a></h3>
+      <p>This week we will discuss chapters 18-19 of Eloquent JavaScript. The final exercise for chapter 19 is advanced; do not save it for the last minute. As the author advises...</p>
+      <a href="https://www.meetup.com/Akron-Women-In-Tech/events/233995684/" role="button" class="btn--secondary fl">LEARN MORE</a>
+    </div>
+
+    <div class="size-4 no-gutter fr">
+      <h2 class="h3">Upcoming Events</h2>
+      <ul style="list-style: none; padding: 0;">
+        <li style="margin-bottom: 1em;"><a href="https://www.meetup.com/Akron-Women-In-Tech/events/233982287/" target="_blank">Hack Night</a></li>
+        <li style="margin-bottom: 1em;"><a href="https://www.meetup.com/Akron-Women-In-Tech/events/233996203/" target="_blank">Programming Book Club - Eloquent JavaScript</a></li>
+        <li style="margin-bottom: 1em;"><a href="https://www.meetup.com/Akron-Women-In-Tech/events/233996215/" target="_blank">Programming Book Club - Eloquent JavaScript</a></li>
+      </ul>
+    </div>
   </div>
 </div>
 
@@ -87,5 +102,9 @@
     <?php endif; ?>
   </div>
 </div>
+
+<script>
+  // updateContent();
+</script>
 
 <?php get_footer(); ?>

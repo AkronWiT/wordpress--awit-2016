@@ -7,7 +7,10 @@
 
 	<link href="<?php bloginfo('stylesheet_url'); ?>" media="screen" rel="stylesheet" />
   <link href="<?php bloginfo('template_url'); ?>/favicon.ico" rel="icon" type="image/png" />
+
 	<?php wp_head(); ?>
+
+  <script src="<?php bloginfo('template_url'); ?>/js/meetup.js"></script>
 </head>
 
 <body <?php body_class(); ?>>
