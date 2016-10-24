@@ -22,6 +22,7 @@
   </div>
 </div>
 
+
 <!-- WHO WE ARE -->
 <div class="container who-we-are--wrapper module--secondary clearfix">
   <div class="content">
@@ -35,6 +36,7 @@
     </div>
   </div>
 </div>
+
 
 <!-- NEWS -->
 <div class="container post--wrapper module--tertiary clearfix">
@@ -63,12 +65,14 @@
   </div>
 </div>
 
+
 <!-- SOCIAL PROOFS -->
 <div class="container clearfix">
   <div class="content">
 
-    <div class="testimony--wrapper clearfix">
-      <h2>What Our Members Say</h2>
+    <h2>What Our Members Say</h2>
+
+    <div class="testimony--wrapper">
       <!-- TESTIMONY 1 -->
       <?php if ( get_post_meta($post->ID, 'testimony_quote_1', true) ) { ?>
         <span class="testimony--photo" style="background-image: url('<?php the_field('testimony_photo_1'); ?>');"></span>
@@ -77,7 +81,7 @@
       <?php } ?>
     </div>
 
-    <div class="testimony--wrapper clearfix">
+    <div class="testimony--wrapper">
       <!-- TESTIMONY 2 -->
       <?php if ( get_post_meta($post->ID, 'testimony_quote_2', true) ) { ?>
         <span class="testimony--photo" style="background-image: url('<?php the_field('testimony_photo_2'); ?>');"></span>

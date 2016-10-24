@@ -16,10 +16,17 @@
   @media (min-width: $site-width--large) {
     position: relative;
 
-    width: 460px;
+    width: percentage(460px / $site-width--large);
     height: 140px;
     padding-left: 156px;
     margin: 0;
+    margin-right: percentage(20px / $site-width--large);
+
+    float: left;
+
+    &:last-child() {
+      margin-right: 0;
+    }
   }
 
   // Testimony Wrapper: Paragraph
