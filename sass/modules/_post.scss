@@ -25,12 +25,56 @@
 
     clear: both;
 
+    // Post Wrapper: Full Post
+    &.post--full {
+
+      @media (min-width: $site-width--large) {
+
+        // Post Wrapper: Full Post: Media
+        .post--media {
+          width: percentage(300px / $site-width--large);
+          display: block;
+
+          // Post Wrapper: Full Post: Date
+          .post--date {
+            margin-top: 16px;
+          }
+        }
+
+        // Post Wrapper: Full Post: Text
+        .post--text {
+          width: percentage(620px / $site-width--large);
+          display: block;
+
+          // Post Wrapper: Full Post: Text: Heading
+          .post--heading {
+            margin-top: 0;
+          }
+
+          // Post Wrapper: Full Post: Text: Button
+          [role='button'] {
+            position: relative;
+
+            margin-top: 1em;
+            display: inline-block;
+          }
+        }
+      }
+    }
+
     @media (min-width: $site-width--large) {
       width: 300px;
       min-height: 550px;
       margin: 0 20px 0 0;
 
       float: left;
+
+      // Post Wrapper: Full Post
+      &.post--full {
+        width: 100%;
+        min-height: auto;
+        margin: 0 0 4em;
+      }
 
       // Post Wrapper: Last Post
       &:last-child() {
@@ -59,5 +103,6 @@
         left: 0;
       }
     }
+
   }
 }
