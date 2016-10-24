@@ -6,17 +6,20 @@
 
     <div class="events--up-next">
       <h2 class="h3">Next Event</h2>
-      <h3 class="h2"><a href="https://www.meetup.com/Akron-Women-In-Tech/events/233995684/">Programming Book Club - Eloquent JavaScript</a></h3>
       <p>This week we will discuss chapters 18-19 of Eloquent JavaScript. The final exercise for chapter 19 is advanced; do not save it for the last minute. As the author advises...</p>
-      <a href="https://www.meetup.com/Akron-Women-In-Tech/events/233995684/" role="button" class="btn--secondary fl">LEARN MORE</a>
+
+      <h3 class="h2"><a href="http://www.meetup.com/Akron-Women-In-Tech/events/233996203/">Programming Book Club - Eloquent JavaScript</a></h3>
+      <p>This week we will discuss chapters 20 of Eloquent JavaScript. As we get closer, we may decide as a group to meet together on a Saturday to work on this project together,...</p>
+      <a href="http://www.meetup.com/Akron-Women-In-Tech/events/233996203/" role="button" class="btn--secondary fl">LEARN MORE</a>
     </div>
 
     <div class="events--up-comming">
       <h2 class="h3">Upcoming Events</h2>
       <ul style="list-style: none; padding: 0;">
-        <li style="margin-bottom: 1em;"><a href="https://www.meetup.com/Akron-Women-In-Tech/events/233982287/" target="_blank">Hack Night</a></li>
-        <li style="margin-bottom: 1em;"><a href="https://www.meetup.com/Akron-Women-In-Tech/events/233996203/" target="_blank">Programming Book Club - Eloquent JavaScript</a></li>
-        <li style="margin-bottom: 1em;"><a href="https://www.meetup.com/Akron-Women-In-Tech/events/233996215/" target="_blank">Programming Book Club - Eloquent JavaScript</a></li>
+        <li style="margin-bottom: 1em;"><a href="http://www.meetup.com/Akron-Women-In-Tech/events/234840232/" target="_blank">Hack Night</a></li>
+        <li style="margin-bottom: 1em;"><a href="http://www.meetup.com/Akron-Women-In-Tech/events/233996215/" target="_blank">Programming Book Club - Eloquent JavaScript</a></li>
+        <li style="margin-bottom: 1em;"><a href="http://www.meetup.com/Akron-Women-In-Tech/events/233996272/" target="_blank">Programming Book Club - Eloquent JavaScript - Celebration!</a></li>
+        <li style="margin-bottom: 1em;"><a href="http://www.meetup.com/Akron-Women-In-Tech/events/235056110/" target="_blank">Code Over Coffee</a></li>
       </ul>
     </div>
   </div>
