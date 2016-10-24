@@ -6,7 +6,6 @@
 
     <div class="events--up-next">
       <h2 class="h3">Next Event</h2>
-      <p>This week we will discuss chapters 18-19 of Eloquent JavaScript. The final exercise for chapter 19 is advanced; do not save it for the last minute. As the author advises...</p>
 
       <h3 class="h2"><a href="http://www.meetup.com/Akron-Women-In-Tech/events/233996203/">Programming Book Club - Eloquent JavaScript</a></h3>
       <p>This week we will discuss chapters 20 of Eloquent JavaScript. As we get closer, we may decide as a group to meet together on a Saturday to work on this project together,...</p>
