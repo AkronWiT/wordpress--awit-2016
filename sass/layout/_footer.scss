@@ -1,0 +1,21 @@
+// footer.scss
+
+// Footer
+.footer {
+    display: block;
+    padding: .5em 0;
+
+    line-height: 1.5em;
+    color: #fff;
+    background-color: rgba(39, 46, 54, .9);
+    overflow: hidden;
+
+    // Footer: Links
+    a {
+        color: #fff;
+    }
+
+    .icon {
+        margin: 0 .25em;
+    }
+}
