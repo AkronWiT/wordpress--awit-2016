@@ -19,7 +19,7 @@
   }
 
   // Events Wrapper: Up Coming
-  .events--up-comming {
+  .events--upcomming {
     width: 100%;
     display: block;
 
@@ -30,6 +30,17 @@
 
       float: right;
       clear: none;
+    }
+
+    // Events Wrapper: Up Coming: Events List
+    .events--list {
+      padding: 0;
+      list-style: none;
+    }
+
+    // Events Wrapper: Up Coming: Event
+    .events--event {
+      margin-bottom: 1em;
     }
   }
 

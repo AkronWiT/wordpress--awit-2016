@@ -4,21 +4,21 @@
 <div class="container events--wrapper module--primary clearfix">
   <div class="content">
 
-    <div class="events--up-next">
+    <div id="nextEvent" class="events--up-next">
       <h2 class="h3">Next Event</h2>
 
-      <h3 class="h2"><a href="http://www.meetup.com/Akron-Women-In-Tech/events/233996203/">Programming Book Club - Eloquent JavaScript</a></h3>
-      <p>This week we will discuss chapters 20 of Eloquent JavaScript. As we get closer, we may decide as a group to meet together on a Saturday to work on this project together,...</p>
-      <a href="http://www.meetup.com/Akron-Women-In-Tech/events/233996203/" role="button" class="btn--secondary fl">LEARN MORE</a>
+      <h3 class="h2"><a href="#" class="js-current-title js-current-url">Loading...</a></h3>
+      <p class="events--current-description js-current-desc">Loading...</p>
+      <a href="#" role="button" class="btn--secondary fl js-current-url">LEARN MORE</a>
     </div>
 
-    <div class="events--up-comming">
+    <div id="upcommingEvent" class="events--upcomming">
       <h2 class="h3">Upcoming Events</h2>
-      <ul style="list-style: none; padding: 0;">
-        <li style="margin-bottom: 1em;"><a href="http://www.meetup.com/Akron-Women-In-Tech/events/234840232/" target="_blank">Hack Night</a></li>
-        <li style="margin-bottom: 1em;"><a href="http://www.meetup.com/Akron-Women-In-Tech/events/233996215/" target="_blank">Programming Book Club - Eloquent JavaScript</a></li>
-        <li style="margin-bottom: 1em;"><a href="http://www.meetup.com/Akron-Women-In-Tech/events/233996272/" target="_blank">Programming Book Club - Eloquent JavaScript - Celebration!</a></li>
-        <li style="margin-bottom: 1em;"><a href="http://www.meetup.com/Akron-Women-In-Tech/events/235056110/" target="_blank">Code Over Coffee</a></li>
+      <ul class="events--list">
+        <li class="events--event"><a href="#" target="_blank" class="js-next-link-1">Loading...</a></li>
+        <li class="events--event"><a href="#" target="_blank" class="js-next-link-2">Loading...</a></li>
+        <li class="events--event"><a href="#" target="_blank" class="js-next-link-3">Loading...</a></li>
+        <li class="events--event"><a href="#" target="_blank" class="js-next-link-4">Loading...</a></li>
       </ul>
     </div>
   </div>
@@ -110,7 +110,7 @@
 </div>
 
 <script>
-  // updateContent();
+  updateContent();
 </script>
 
 <?php get_footer(); ?>
