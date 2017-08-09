@@ -17,19 +17,19 @@
   .sponsors--sponsor {
     width: 100%;
     height: 120px;
-    padding-top: 35px;
     display: block;
+    margin-top: 35px;
 
     float: left;
 
     @media (min-width: $site-width--large) {
-      width: 300px;
-      height: 140px;
-      padding-top: 45px;
+      width: auto;
+      margin: 45px 1em;
     }
 
     // Sponsor Wrapper: Sponsor: Link
     img {
+      max-width: 250px;
       display: block;
       margin: 0 auto;
     }
