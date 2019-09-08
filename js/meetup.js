@@ -1,3 +1,18 @@
+function requestToken(){
+
+  debugger;
+  console.log('debugger');
+  var requestUri = "https://secure.meetup.com/oauth2/authorize?client_id=6d2t2blk7dulv09n8cqn3kel64&response_type=token&redirect_uri=https://akronwit.org";
+
+  jQuery.ajax({
+    type:'GET'
+    ,url: requestUri
+    ,dataType: 'jsonp'
+    ,success: function(data, status, requst){
+      jQuery('.js-current-title', '#nextEvent').text("Success!");
+    }
+  });
+}
 function updateContent() {
 
   // Meetup Event 
