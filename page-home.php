@@ -8,17 +8,19 @@
       <h2 class="h3">Next Event</h2>
 
       <h3 class="h2"><a href="#" class="js-current-title js-current-url">Loading...</a></h3>
-      <p class="events--current-description js-current-desc">Loading...</p>
+      <p class="events--current-description js-current-desc"><!--Loading...--></p>
       <a href="#" role="button" class="btn--secondary fl js-current-url">LEARN MORE</a>
     </div>
 
     <div id="upcommingEvent" class="events--upcomming">
       <h2 class="h3">Upcoming Events</h2>
       <ul class="events--list">
+      <!--
         <li class="events--event"><a href="#" target="_blank" class="js-next-link-1">Loading...</a></li>
         <li class="events--event"><a href="#" target="_blank" class="js-next-link-2">Loading...</a></li>
         <li class="events--event"><a href="#" target="_blank" class="js-next-link-3">Loading...</a></li>
         <li class="events--event"><a href="#" target="_blank" class="js-next-link-4">Loading...</a></li>
+        -->
       </ul>
     </div>
   </div>
