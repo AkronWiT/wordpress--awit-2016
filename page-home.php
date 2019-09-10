@@ -7,7 +7,7 @@
     <div id="nextEvent" class="events--up-next">
       <h2 class="h3">Next Event</h2>
 
-      <h3 class="h2"><a href="#" class="js-current-title js-current-url">Loading...</a></h3>
+      <h3 class="h2"><a href="#" class="js-current-title js-current-url"><!--Loading...--></a></h3>
       <p class="events--current-description js-current-desc"><!--Loading...--></p>
       <a href="#" role="button" class="btn--secondary fl js-current-url">LEARN MORE</a>
     </div>

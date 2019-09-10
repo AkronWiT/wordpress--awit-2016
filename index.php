@@ -3,7 +3,7 @@
 <div class="container post--wrapper clearfix">
   <div class="content">
 
-    <h2>News</h2>
+    <h2>Blog</h2>
 
   <?php if ( have_posts() ) : ?>
   	<?php while ( have_posts() ) : the_post(); ?>

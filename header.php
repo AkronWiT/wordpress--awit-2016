@@ -20,7 +20,7 @@
     ga('send', 'pageview');
   </script>
 	
-  <script src="<?php bloginfo('template_url'); ?>/js/meetup.js"></script>
+  <!--<script src="<?php bloginfo('template_url'); ?>/js/meetup.js"></script>-->
 </head>
 
 <body <?php body_class(); ?>>

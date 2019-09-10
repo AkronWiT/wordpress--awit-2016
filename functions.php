@@ -49,3 +49,8 @@ add_action( 'after_setup_theme', 'woocommerce_support' );
 function woocommerce_support() {
     add_theme_support( 'woocommerce' );
 }
+
+////////////////////////////////////////////////////////////////////////////////
+// JavaScript
+////////////////////////////////////////////////////////////////////////////////
+wp_enqueue_script( 'meetup_script', get_template_directory_uri() . '/js/meetup.js', array ( 'jquery' ), 1.1, false);
