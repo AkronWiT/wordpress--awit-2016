@@ -7,9 +7,7 @@ function updateContent() {
     jsonp: "callback",
     dataType: 'jsonp',
     success: function(data, status, request) {
-      // console.log(data);
       if (status == 'success') {
-        debugger;
         if(data.data == null || data.data.length == 0){
           jQuery('.js-current-title', '#nextEvent').text("No Events Currently Scheduled, Check Back Soon!");
         }
