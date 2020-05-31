@@ -110,6 +110,21 @@
   </div>
 </div>
 
+<!-- Thank You
+<div class="container sponsors--wrapper module--secondary clearfix">
+  <div class="content">
+    <h2>Thank You Donors</h2>
+    <?php if( have_rows('thank_you!') ): ?>
+      <?php while ( have_rows('thank_you!') ) : the_row(); ?>
+      <div class="sponsors--sponsor">
+        <p><?php the_sub_field('donor_name'); ?></p>
+      </div>
+      <?php endwhile; ?>
+    <?php endif; ?>
+  </div>
+</div>
+-->
+
 <script>
   updateContent();
 </script>
