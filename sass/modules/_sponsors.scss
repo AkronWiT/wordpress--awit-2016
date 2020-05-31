@@ -33,5 +33,10 @@
       display: block;
       margin: 0 auto;
     }
+
+    .sponsors--sponsor:last-child {
+      @media (min-width: $site-width--large) {
+        margin-right: 0;
+      }
   }
 }

@@ -3,7 +3,6 @@
 <!-- NEWS -->
 <div class="container events--wrapper module--primary clearfix">
   <div class="content">
-
     <div id="nextEvent" class="events--up-next">
       <h2 class="h3">Next Event</h2>
 
@@ -11,16 +10,16 @@
       <p class="events--current-description js-current-desc"><!--Loading...--></p>
       <a href="#" role="button" class="btn--secondary fl js-current-url">LEARN MORE</a>
     </div>
-
+	  
     <div id="upcommingEvent" class="events--upcomming">
       <h2 class="h3">Upcoming Events</h2>
       <ul class="events--list">
-      <!--
+		<!--
         <li class="events--event"><a href="#" target="_blank" class="js-next-link-1">Loading...</a></li>
         <li class="events--event"><a href="#" target="_blank" class="js-next-link-2">Loading...</a></li>
         <li class="events--event"><a href="#" target="_blank" class="js-next-link-3">Loading...</a></li>
         <li class="events--event"><a href="#" target="_blank" class="js-next-link-4">Loading...</a></li>
-        -->
+		-->
       </ul>
     </div>
   </div>
@@ -45,7 +44,7 @@
 <!-- NEWS -->
 <div class="container post--wrapper module--tertiary clearfix">
   <div class="content">
-    <h2>News</h2>
+    <h2>Blog</h2>
   <?php
     $args = array( 'posts_per_page' => 3 );
     $loop = new WP_Query( $args );

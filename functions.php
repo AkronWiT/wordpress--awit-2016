@@ -53,4 +53,4 @@ function woocommerce_support() {
 ////////////////////////////////////////////////////////////////////////////////
 // JavaScript
 ////////////////////////////////////////////////////////////////////////////////
-wp_enqueue_script( 'meetup_script', get_template_directory_uri() . '/js/meetup.js', array ( 'jquery' ), 1.1, false);
+wp_enqueue_script( 'meetup_script', get_template_directory_uri() . '/js/meetup.js', array ( 'jquery' ), 1.2, false);
