@@ -25,6 +25,18 @@
   </div>
 </div>
 
+<!-- Mission -->
+<div class="container clearfix">
+  <div class="content">
+	  <h2>
+		  Our Mission
+	  </h2>
+      <p><?php $output = get_post(391);
+		  echo apply_filters( 'the_content', $output->post_content )
+		  ?></p>
+    <?php wp_reset_query(); ?>
+    </div>
+  </div>
 
 <!-- WHO WE ARE -->
 <div class="container who-we-are--wrapper module--secondary clearfix">
