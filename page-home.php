@@ -3,7 +3,6 @@
 <!-- NEWS -->
 <div class="container events--wrapper module--primary clearfix">
   <div class="content">
-
     <div id="nextEvent" class="events--up-next">
       <h2 class="h3">Next Event</h2>
 
@@ -11,21 +10,33 @@
       <p class="events--current-description js-current-desc"><!--Loading...--></p>
       <a href="#" role="button" class="btn--secondary fl js-current-url">LEARN MORE</a>
     </div>
-
+	  
     <div id="upcommingEvent" class="events--upcomming">
       <h2 class="h3">Upcoming Events</h2>
       <ul class="events--list">
-      <!--
+		<!--
         <li class="events--event"><a href="#" target="_blank" class="js-next-link-1">Loading...</a></li>
         <li class="events--event"><a href="#" target="_blank" class="js-next-link-2">Loading...</a></li>
         <li class="events--event"><a href="#" target="_blank" class="js-next-link-3">Loading...</a></li>
         <li class="events--event"><a href="#" target="_blank" class="js-next-link-4">Loading...</a></li>
-        -->
+		-->
       </ul>
     </div>
   </div>
 </div>
 
+<!-- Mission -->
+<div class="container clearfix">
+  <div class="content">
+	  <h2>
+		  Our Mission
+	  </h2>
+      <p><?php $output = get_post(391);
+		  echo apply_filters( 'the_content', $output->post_content )
+		  ?></p>
+    <?php wp_reset_query(); ?>
+    </div>
+  </div>
 
 <!-- WHO WE ARE -->
 <div class="container who-we-are--wrapper module--secondary clearfix">
@@ -45,7 +56,7 @@
 <!-- NEWS -->
 <div class="container post--wrapper module--tertiary clearfix">
   <div class="content">
-    <h2>News</h2>
+    <h2>Blog</h2>
   <?php
     $args = array( 'posts_per_page' => 3 );
     $loop = new WP_Query( $args );
@@ -110,6 +121,21 @@
     <?php endif; ?>
   </div>
 </div>
+
+<!-- Thank You
+<div class="container sponsors--wrapper module--secondary clearfix">
+  <div class="content">
+    <h2>Thank You Donors</h2>
+    <?php if( have_rows('thank_you!') ): ?>
+      <?php while ( have_rows('thank_you!') ) : the_row(); ?>
+      <div class="sponsors--sponsor">
+        <p><?php the_sub_field('donor_name'); ?></p>
+      </div>
+      <?php endwhile; ?>
+    <?php endif; ?>
+  </div>
+</div>
+-->
 
 <script>
   updateContent();
